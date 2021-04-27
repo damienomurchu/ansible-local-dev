@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - include_role:
+        name: install_base_packages
+
+
